@@ -8,9 +8,30 @@ const order = input.split(",")
 const froyo = {}
 
 //loop through array
-// for (const flavor in order) {
-//     if (...)
+// THIS WAS CHATGPT'S ANSWER
+// I understand what it means and it's cleaner so I'm using it, but below I will put my version of it
+
+for (let flavor of order) {
+    froyo[flavor] = (froyo[flavor] || 0) + 1;
+}
+
+// console.table(froyo)
+
+// Here is my version of the above code
+
+// function getFlavors(array, obj) {
+//     for (let flavor of array) {
+//         if (obj[flavor] !== undefined) {
+//             obj[flavor] += 1;
+//         } else {
+//             obj[flavor] = 1;
+//         }
+//     }
+//     return froyo
 // }
+
+// console.table(getFlavors(order, froyo))
+
 
 //check if key is in obj
 //    if key is NOT in obj {} set key and value of key to 1
