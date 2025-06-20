@@ -15,7 +15,7 @@ for (let flavor of order) {
     froyo[flavor] = (froyo[flavor] || 0) + 1;
 }
 
-// console.table(froyo)
+console.table(froyo)
 
 // Here is my version of the above code
 
@@ -31,6 +31,20 @@ for (let flavor of order) {
 // }
 
 // console.table(getFlavors(order, froyo))
+
+// Here's a version with key in obj notation
+
+// function count(arr) {
+//     const obj = {};
+//     for (const element in arr) {
+//         if (element in obj) {
+//             obj[element] += 1;
+//         } else {
+//             obj[element] = 1;
+//         }
+//     }
+//     return obj;
+// }
 
 
 //check if key is in obj
